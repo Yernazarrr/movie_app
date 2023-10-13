@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lessons/models/home_page.dart';
+import 'package:flutter_lessons/features/home/pages/home_page.dart';
 
 void main(List<String> args) {
   runApp(const TestApp());
@@ -13,7 +13,9 @@ class TestApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-        textTheme: const TextTheme(),
+        textTheme: const TextTheme(
+          headlineMedium: TextStyle(fontSize: 10, color: Colors.black),
+        ),
       ),
       home: const HomePage(
         title: 'Films',
